@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#2196f3"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- 奶瓶 -->
+  <g transform="translate(256 268)">
+    <!-- 奶嘴 -->
+    <path d="M -22 -168 Q 0 -196 22 -168 L 22 -140 L -22 -140 Z" fill="#ffe0b2"/>
+    <!-- 瓶盖 -->
+    <rect x="-46" y="-142" width="92" height="34" rx="10" fill="#ffb74d"/>
+    <!-- 瓶身 -->
+    <rect x="-64" y="-104" width="128" height="220" rx="30" fill="#ffffff"/>
+    <!-- 奶 -->
+    <path d="M -64 -20 Q -30 -38 0 -20 Q 30 -2 64 -20 L 64 86 Q 64 116 34 116 L -34 116 Q -64 116 -64 86 Z" fill="#fff3e0" opacity="0.9"/>
+    <!-- 刻度 -->
+    <rect x="20" y="-70" width="28" height="7" rx="3.5" fill="#90caf9"/>
+    <rect x="20" y="-34" width="28" height="7" rx="3.5" fill="#90caf9"/>
+    <rect x="20" y="2" width="28" height="7" rx="3.5" fill="#90caf9"/>
+    <!-- 笑脸 -->
+    <circle cx="-22" cy="40" r="6" fill="#546e7a"/>
+    <circle cx="22" cy="40" r="6" fill="#546e7a"/>
+    <path d="M -16 62 Q 0 76 16 62" stroke="#546e7a" stroke-width="7" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>
