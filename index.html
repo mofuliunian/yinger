@@ -1,90 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CloudBase 静态网站</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #333;
-    }
-    .container {
-      background: #fff;
-      border-radius: 16px;
-      padding: 48px 40px;
-      max-width: 560px;
-      width: 90%;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-      text-align: center;
-    }
-    .logo {
-      width: 72px;
-      height: 72px;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      border-radius: 16px;
-      margin: 0 auto 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      color: #fff;
-      font-weight: bold;
-    }
-    h1 { font-size: 28px; margin-bottom: 12px; }
-    .subtitle { font-size: 16px; color: #666; margin-bottom: 32px; }
-    .info-card {
-      background: #f8f9fa;
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 24px;
-      text-align: left;
-    }
-    .info-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      border-bottom: 1px solid #eee;
-    }
-    .info-item:last-child { border-bottom: none; }
-    .info-label { color: #999; font-size: 14px; }
-    .info-value { color: #333; font-size: 14px; font-weight: 500; }
-    .footer { font-size: 13px; color: #aaa; margin-top: 16px; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="logo">CB</div>
-    <h1>CloudBase 静态网站</h1>
-    <p class="subtitle">已成功部署到云开发静态托管</p>
-    <div class="info-card">
-      <div class="info-item">
-        <span class="info-label">环境 ID</span>
-        <span class="info-value">sensen-d2g1kvzoybef8af84</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">地域</span>
-        <span class="info-value">ap-shanghai</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">部署时间</span>
-        <span class="info-value" id="time"></span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">状态</span>
-        <span class="info-value" style="color: #52c41a;">在线</span>
-      </div>
-    </div>
-    <p class="footer">Powered by CloudBase</p>
-  </div>
-  <script>
-    document.getElementById('time').textContent = new Date().toLocaleString('zh-CN');
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#4fc3f7" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="宝宝记录" />
+    <title>宝宝记录</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
